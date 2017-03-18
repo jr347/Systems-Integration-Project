@@ -1,0 +1,476 @@
+Array
+(
+    [page] => 1
+    [results] => Array
+        (
+            [0] => Array
+                (
+                    [poster_path] => /45Y1G5FEgttPAwjTYic6czC9xCn.jpg
+                    [adult] => 
+                    [overview] => In the near future, a weary Logan cares for an ailing Professor X in a hide out on the Mexican border. But Logan's attempts to hide from the world and his legacy are up-ended when a young mutant arrives, being pursued by dark forces.
+                    [release_date] => 2017-02-28
+                    [genre_ids] => Array
+                        (
+                            [0] => 28
+                            [1] => 18
+                            [2] => 878
+                        )
+
+                    [id] => 263115
+                    [original_title] => Logan
+                    [original_language] => en
+                    [title] => Logan
+                    [backdrop_path] => /5pAGnkFYSsFJ99ZxDIYnhQbQFXs.jpg
+                    [popularity] => 160.447657
+                    [vote_count] => 1357
+                    [video] => 
+                    [vote_average] => 7.7
+                )
+
+            [1] => Array
+                (
+                    [poster_path] => /7AGV84ZcdvoZNpxqjiktti8TXLO.jpg
+                    [adult] => 
+                    [overview] => A lone man locked inside a dark room is violently interrogated about his identity. When his captors finally find out who he is, they realize that he isn't locked in with them, they are the ones locked in with him…
+                    [release_date] => 2013-04-26
+                    [genre_ids] => Array
+                        (
+                            [0] => 18
+                            [1] => 27
+                            [2] => 9648
+                        )
+
+                    [id] => 229801
+                    [original_title] => Logan
+                    [original_language] => en
+                    [title] => Logan
+                    [backdrop_path] => 
+                    [popularity] => 1.335924
+                    [vote_count] => 3
+                    [video] => 
+                    [vote_average] => 4.7
+                )
+
+            [2] => Array
+                (
+                    [poster_path] => /aPkm7UOymBBjUpDuXsyH3g5yU8O.jpg
+                    [adult] => 
+                    [overview] => "Logan" is a story about two teenage brothers, Tyler and Logan. Logan, the younger of the two, has got his mind set on a seemingly impossible project which turns out to be much harder than he could ever imagine. At the turn of an unexpected tragedy, the brothers' relationship is altered forever and Tyler is challenged to do whatever it takes to see his little brother's project succeed, even if that means risking it all.
+                    [release_date] => 2010-09-10
+                    [genre_ids] => Array
+                        (
+                            [0] => 35
+                            [1] => 18
+                            [2] => 10751
+                        )
+
+                    [id] => 44010
+                    [original_title] => Logan
+                    [original_language] => en
+                    [title] => Logan
+                    [backdrop_path] => 
+                    [popularity] => 1.009356
+                    [vote_count] => 1
+                    [video] => 
+                    [vote_average] => 4.5
+                )
+
+            [3] => Array
+                (
+                    [poster_path] => /4wZMFJtoNrqTUq2yQxrfHHIWXd8.jpg
+                    [adult] => 
+                    [overview] => Two brothers plan a heist during a NASCAR race.
+                    [release_date] => 2017-08-18
+                    [genre_ids] => Array
+                        (
+                        )
+
+                    [id] => 399170
+                    [original_title] => Logan Lucky
+                    [original_language] => en
+                    [title] => Logan Lucky
+                    [backdrop_path] => 
+                    [popularity] => 1.349517
+                    [vote_count] => 2
+                    [video] => 
+                    [vote_average] => 0
+                )
+
+            [4] => Array
+                (
+                    [poster_path] => 
+                    [adult] => 
+                    [overview] => In 1920 the last of a band of traveling gypsies are killed to make way for the development of St. George Island. Now after 96 years, life is breathed back into an ancient terror. With only vengeance in mind, all trespassers on St. George Island are murdered in gruesome fashion .
+                    [release_date] => 
+                    [genre_ids] => Array
+                        (
+                        )
+
+                    [id] => 446207
+                    [original_title] => Jack Logan
+                    [original_language] => en
+                    [title] => Jack Logan
+                    [backdrop_path] => 
+                    [popularity] => 1.0027
+                    [vote_count] => 0
+                    [video] => 
+                    [vote_average] => 0
+                )
+
+            [5] => Array
+                (
+                    [poster_path] => /iBtkwot48QkgYpPfjceCgyK1Rhz.jpg
+                    [adult] => 
+                    [overview] => An idyllic sci-fi future has one major drawback:, all citizens get a chance of being 'renewed' in a Civic Ceremony, at their 30th birthday, unless you run and escape before your time.
+                    [release_date] => 1976-06-23
+                    [genre_ids] => Array
+                        (
+                            [0] => 12
+                            [1] => 28
+                            [2] => 10749
+                            [3] => 878
+                        )
+
+                    [id] => 10803
+                    [original_title] => Logan's Run
+                    [original_language] => en
+                    [title] => Logan's Run
+                    [backdrop_path] => /a68m6hfvFLctuq1IhrefWwHZLa2.jpg
+                    [popularity] => 2.207222
+                    [vote_count] => 190
+                    [video] => 
+                    [vote_average] => 6.5
+                )
+
+            [6] => Array
+                (
+                    [poster_path] => /aKijsuQsCPJuDQOhLsatoUcA581.jpg
+                    [adult] => 
+                    [overview] => Silent drama......
+                    [release_date] => 1918-09-08
+                    [genre_ids] => Array
+                        (
+                            [0] => 10752
+                            [1] => 37
+                        )
+
+                    [id] => 347053
+                    [original_title] => Mr. Logan, U.S.A.
+                    [original_language] => en
+                    [title] => Mr. Logan, U.S.A.
+                    [backdrop_path] => 
+                    [popularity] => 1.000602
+                    [vote_count] => 0
+                    [video] => 
+                    [vote_average] => 0
+                )
+
+            [7] => Array
+                (
+                    [poster_path] => /lVHsBxkEXSH25TaUfyYF4KfrhlB.jpg
+                    [adult] => 
+                    [overview] => What starts as a poignant medical documentary about Deborah Logan's descent into Alzheimer's disease and her daughter's struggles as caregiver degenerates into a maddening portrayal of dementia at its most frightening, as hair-raising events begin to plague the family and crew and an unspeakable malevolence threatens to tear the very fabric of sanity from them all.
+                    [release_date] => 2014-10-21
+                    [genre_ids] => Array
+                        (
+                            [0] => 27
+                            [1] => 9648
+                            [2] => 53
+                        )
+
+                    [id] => 297608
+                    [original_title] => The Taking
+                    [original_language] => en
+                    [title] => The Taking
+                    [backdrop_path] => /dHDQ0PhyH6B21OPYqApndkni2B6.jpg
+                    [popularity] => 1.929184
+                    [vote_count] => 245
+                    [video] => 
+                    [vote_average] => 5.9
+                )
+
+            [8] => Array
+                (
+                    [poster_path] => /hMc2Z8eTJt1ituuVam5NzaOFkQ.jpg
+                    [adult] => 
+                    [overview] => Burt Reynolds plays Logan McQueen, the hardest and most fearless cop in Florida. A series of attacks begins to happen in Miami, everyone of them meticulously carried out by a person who seems to be an extremely lethal terrorist. Buildings, schools, public places, everything is destroyed by the bombs. When trying hopelessly to find and to destroy the terrorist, Logan McQueen ends up getting closer to a convict who says that he is capable to foresee the explosions. Now, Logan will have to team up with the man and find the terrorist.
+                    [release_date] => 1999-02-27
+                    [genre_ids] => Array
+                        (
+                        )
+
+                    [id] => 180909
+                    [original_title] => Hard Time: The Premonition
+                    [original_language] => en
+                    [title] => Hard Time: The Premonition
+                    [backdrop_path] => 
+                    [popularity] => 1.006953
+                    [vote_count] => 0
+                    [video] => 
+                    [vote_average] => 0
+                )
+
+            [9] => Array
+                (
+                    [poster_path] => /9MJMtdxti4eQ9d5qIzcWpKiFD0J.jpg
+                    [adult] => 
+                    [overview] => A young psychologically unstable young police woman named Kate Logan and a married Frenchman find themselves caught up in a dramatic twisted affair.
+                    [release_date] => 2010-10-15
+                    [genre_ids] => Array
+                        (
+                            [0] => 18
+                            [1] => 53
+                        )
+
+                    [id] => 78286
+                    [original_title] => The Kate Logan affair
+                    [original_language] => fr
+                    [title] => The Kate Logan affair
+                    [backdrop_path] => /oel7LRzvRE308Sirl54lLjISMws.jpg
+                    [popularity] => 1.016248
+                    [vote_count] => 5
+                    [video] => 
+                    [vote_average] => 3.8
+                )
+
+            [10] => Array
+                (
+                    [poster_path] => /nCgYLnDfky9GauYDkdfG2vJDQP6.jpg
+                    [adult] => 
+                    [overview] => Burt Reynolds plays Logan McQueen, a veteran, tough cop who likes to see justice done by his own ways. Things go bad after McQueen is framed for murder. Now he has to escape from a maximum security prison, and seek, on the deadly streets of a hot and dangerous Miami, for the man who wants him down...
+                    [release_date] => 1998-12-12
+                    [genre_ids] => Array
+                        (
+                            [0] => 28
+                            [1] => 80
+                            [2] => 18
+                        )
+
+                    [id] => 180907
+                    [original_title] => Hard Time
+                    [original_language] => en
+                    [title] => Hard Time
+                    [backdrop_path] => 
+                    [popularity] => 1.096458
+                    [vote_count] => 1
+                    [video] => 
+                    [vote_average] => 4
+                )
+
+            [11] => Array
+                (
+                    [poster_path] => /AeIypKlh3YEShFr8b1VFvRzs5e9.jpg
+                    [adult] => 
+                    [overview] => A California congressman's wife and daughter are abducted and held hostage in a historic hotel and Logan McQueen (Reynolds) is rushed to the scene to assist his former partner, Charlie Duffy (Durning), who has been taken captive trying to broker the ransom deal. McQueen must risk his life to face the cunning killer (Carradine) and save the hostages and his long-time friend.
+                    [release_date] => 1999-11-14
+                    [genre_ids] => Array
+                        (
+                            [0] => 10770
+                            [1] => 28
+                            [2] => 53
+                        )
+
+                    [id] => 41241
+                    [original_title] => Hard Time: Hostage Hotel
+                    [original_language] => en
+                    [title] => Hard Time: Hostage Hotel
+                    [backdrop_path] => /7ClphEABdkVh6GTRsAeryCoQO8D.jpg
+                    [popularity] => 1.083496
+                    [vote_count] => 1
+                    [video] => 
+                    [vote_average] => 5.5
+                )
+
+            [12] => Array
+                (
+                    [poster_path] => /eIpLLJHwsmFL3xBOm5QOKEWoUP1.jpg
+                    [adult] => 
+                    [overview] => Agent Lemmy Logan is investigating the case of a missing NASA scientist and discovers that an ex nazi is developing  a new super weapon.
+                    [release_date] => 1966-08-28
+                    [genre_ids] => Array
+                        (
+                            [0] => 28
+                            [1] => 12
+                            [2] => 80
+                            [3] => 878
+                            [4] => 53
+                        )
+
+                    [id] => 270585
+                    [original_title] => Agente Logan - missione Ypotron
+                    [original_language] => en
+                    [title] => Agente Logan - missione Ypotron
+                    [backdrop_path] => /z3YnD9nACawVsbrK3cZOFt8pkDN.jpg
+                    [popularity] => 1.015632
+                    [vote_count] => 0
+                    [video] => 
+                    [vote_average] => 0
+                )
+
+            [13] => Array
+                (
+                    [poster_path] => /xjGtkbeN9alYsNorhQlL1oCm74q.jpg
+                    [adult] => 
+                    [overview] => An experimental short film by Derek Jarman enlivens urban surrounding with the presence of a human being.
+                    [release_date] => 1972-01-01
+                    [genre_ids] => Array
+                        (
+                        )
+
+                    [id] => 310652
+                    [original_title] => Andrew Logan Kisses The Glitterati
+                    [original_language] => en
+                    [title] => Andrew Logan Kisses The Glitterati
+                    [backdrop_path] => 
+                    [popularity] => 1.00001
+                    [vote_count] => 0
+                    [video] => 
+                    [vote_average] => 0
+                )
+
+            [14] => Array
+                (
+                    [poster_path] => /s2OTVXpfKPfup1WKGXC4nUl0PDM.jpg
+                    [adult] => 
+                    [overview] => This movie is about a woman who is trying to rebuild her shattered marriage. She and her husband move to an old Victorian style home, where she finds a beautiful dress in the attic, which has a tear in the shoulder. She has the dress repaired. When she tries it on in the restored attic, she suddenly finds herself in another era. This time travel seems to happen whenever she wears the dress. She learns the house was once owned by an artist who died under mysterious circumstances. She meets the artist and eventually falls in love with him. Knowing what she does about his fate, can her love save him and change history?
+                    [release_date] => 1979-10-31
+                    [genre_ids] => Array
+                        (
+                            [0] => 10749
+                            [1] => 18
+                        )
+
+                    [id] => 22519
+                    [original_title] => The Two Worlds of Jennie Logan
+                    [original_language] => en
+                    [title] => The Two Worlds of Jennie Logan
+                    [backdrop_path] => 
+                    [popularity] => 1.214038
+                    [vote_count] => 2
+                    [video] => 
+                    [vote_average] => 2
+                )
+
+            [15] => Array
+                (
+                    [poster_path] => 
+                    [adult] => 
+                    [overview] => A remake of the dystopian 1976 science fiction film Logan’s Run.
+                    [release_date] => 
+                    [genre_ids] => Array
+                        (
+                            [0] => 28
+                            [1] => 12
+                            [2] => 18
+                            [3] => 878
+                            [4] => 53
+                        )
+
+                    [id] => 413749
+                    [original_title] => Logan's Run
+                    [original_language] => en
+                    [title] => Logan's Run
+                    [backdrop_path] => 
+                    [popularity] => 1.002051
+                    [vote_count] => 0
+                    [video] => 
+                    [vote_average] => 0
+                )
+
+            [16] => Array
+                (
+                    [poster_path] => /cfnuIcE9Wm9nEqN4dae1uCJuE5P.jpg
+                    [adult] => 
+                    [overview] => A Law &amp; Order TV movie centered on the character Mike Logan.
+                    [release_date] => 1998-11-08
+                    [genre_ids] => Array
+                        (
+                            [0] => 10770
+                            [1] => 80
+                            [2] => 18
+                        )
+
+                    [id] => 87901
+                    [original_title] => Exiled
+                    [original_language] => en
+                    [title] => Exiled
+                    [backdrop_path] => 
+                    [popularity] => 1.011699
+                    [vote_count] => 0
+                    [video] => 
+                    [vote_average] => 0
+                )
+
+            [17] => Array
+                (
+                    [poster_path] => /cSyFaSCdauIsmHoAwDaeVehkTqA.jpg
+                    [adult] => 
+                    [overview] => A former agent of the CIA and his estranged daughter go on the run after his employers target them for assassination.
+                    [release_date] => 2012-09-27
+                    [genre_ids] => Array
+                        (
+                            [0] => 28
+                            [1] => 53
+                        )
+
+                    [id] => 106021
+                    [original_title] => Erased
+                    [original_language] => en
+                    [title] => Erased
+                    [backdrop_path] => /kex11AGl4rvKSfe838kQJazwZ21.jpg
+                    [popularity] => 2.73849
+                    [vote_count] => 211
+                    [video] => 
+                    [vote_average] => 5.5
+                )
+
+            [18] => Array
+                (
+                    [poster_path] => /a4FSVgCrAQCClcbl3yk5YxTTVo7.jpg
+                    [adult] => 
+                    [overview] => Chuck Norris stars as martial arts extraordinaire Jake Fallon, who, after the death of his brother and sister-in-law, adopts (and trains) his orphaned nephew. Logan (Eddie Cibrian, TV's Invasion). After fifteen years of careful instruction, Logan is determined to avenge his parents Death... And, he'll need Uncle Jake's help to do it.
+                    [release_date] => 1998-11-01
+                    [genre_ids] => Array
+                        (
+                            [0] => 28
+                            [1] => 12
+                        )
+
+                    [id] => 38202
+                    [original_title] => Logan's War:  Bound by Honor
+                    [original_language] => en
+                    [title] => Logan's War:  Bound by Honor
+                    [backdrop_path] => /1OwgkCJIEK9l0vRkqKRWBibU1HQ.jpg
+                    [popularity] => 1.197372
+                    [vote_count] => 7
+                    [video] => 
+                    [vote_average] => 4.6
+                )
+
+            [19] => Array
+                (
+                    [poster_path] => /e1e118zEcndopgDzUUJCLTNqQJ3.jpg
+                    [adult] => 
+                    [overview] => Live at the Tivoli, recorded at the Tivoli Theatre, Wimborne, Dorset on 10th December 2010
+                    [release_date] => 
+                    [genre_ids] => Array
+                        (
+                            [0] => 10402
+                        )
+
+                    [id] => 246272
+                    [original_title] => Albert Lee and Logan's Hero
+                    [original_language] => en
+                    [title] => Albert Lee and Logan's Hero
+                    [backdrop_path] => 
+                    [popularity] => 1
+                    [vote_count] => 0
+                    [video] => 
+                    [vote_average] => 0
+                )
+
+        )
+
+    [total_results] => 20
+    [total_pages] => 1
+)
