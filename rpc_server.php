@@ -5,23 +5,23 @@ use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
 require_once('mysqlHelp.php.inc'); 
 
-function doLogin ($username, $password)
+function doLogin ($request)
 {
 	$login = new loginDB();
-	$result = $login->getInfo($username, $password);
+	$result = $login->getInfo($request);
 	
 	if($result) {
-		return true;
+		return "Succesful Login!";
 	}
 	else{
-		return false;
+		return "Unable to login";
 	}
 
 }
 
 function newRegister($request) {
 	$register = new loginDB();
-	$result = $login->newUser($request[0], $request[1], $request[2]);
+	$result = $register->newUser($request);
 	if($result){
 		return "New user registered!";
 	}
@@ -42,7 +42,7 @@ function requestProcessor($request){
 		case "register":
 			return newRegister($request);
 		case "login":
-			return doLogin($request['username'], $request['password']);
+			return doLogin($request);
 	return "Request received and processed!";
 	}
 }
