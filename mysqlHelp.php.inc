@@ -2,7 +2,7 @@
 
 class loginDB {
 
-private $logidb;
+private $logindb;
 
 public function __construct() {
 	$this->logindb = new mysqli('localhost', 'root', 'godemper', 'login' );
@@ -13,32 +13,42 @@ public function __construct() {
 	echo 'Success... ' . $this->logindb->host_info . "\n";
 }
 
-public function getInfo($usern, $passw){
-	$uname = $this->logindb->real_escape_string($usern);
-	$pwd = $this->logindb->real_escape_string($passw);
-	$userInfo = "Select * from users where screenname = '$uname' AND password = '$pwd'";
+public function getInfo($req){
+	$uname = $this->logindb->real_escape_string($req['username']);
+	$pwd = $this->logindb->real_escape_string($req['password']);
+	$userInfo = "Select * from users where username = '$uname' AND password = '$pwd'";
 	$response = $this->logindb->query($userInfo);
-
+//	if(!$result){ throw new Exception("Database Error [{$this->logindb->errno}] {$this->logindb->error}"); }
 	while ($row = $response->fetch_assoc())
 	{
-		echo "checking password for $usern".PHP_EOL;
-		if ($row["password"] == $passw)
+		echo "checking password for $uname".PHP_EOL;
+		if ($row["password"] == $pwd)
 		{
-			echo "passwords match for $usern".PHP_EOL;
-			return 1;// password match
+			echo "passwords match for $uname".PHP_EOL;
+			return true;// password match
 		}
-		echo "passwords did not match for $usern".PHP_EOL;
+		echo "passwords did not match for $uname".PHP_EOL;
 	}
-	return 0;//no users matched username
+	return false;//no users matched username
 }
 
-public function newUser($usern, $passw, $email){
-	$uname = $this->logindb->real_escape_string($usern);
-	$pwd = $this->logindb->real_escape_string($passw);
-	$em = $this->logindb->real_escape_string($email);
-	$newInfo = "Insert into users (screenname, password, email) values ('$uname', '$pwd', '$em')";
-	$response = $this->logindb->query($newInfo);
-	return true;
+public function newUser($req){
+	$uname = $this->logindb->real_escape_string($req['username']);
+	$pwd = $this->logindb->real_escape_string($req['password']);
+	$em = $this->logindb->real_escape_string($req['email']);
+	$firstn = $this->logindb->real_escape_string($req['first_name']);
+	$lastn = $this->logindb->real_escape_string($req['last_name']);
+	$user_exist = "Select * from users where username = '$uname'";
+	$check = $this->logindb->query($user_exist);
+	$rows = $check->num_rows;
+	if($rows > 0){
+		return false;
+	}
+	else {
+		$newInfo = "Insert into users (username, password, first_name, last_name,email, role) values ('$uname', '$pwd', '$firstn', '$lastn','$em', 'user')";
+		$response = $this->logindb->query($newInfo);
+		return true;
+	}
 }
 
 }
