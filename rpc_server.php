@@ -4,17 +4,17 @@ require_once '/usr/share/php/PhpAmqpLib/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
 require_once('mysqlHelp.php.inc'); 
-
+require_once('moviedata.php.inc');
 function doLogin ($request)
 {
 	$login = new loginDB();
 	$result = $login->getInfo($request);
 	
 	if($result) {
-		return "Succesful Login!";
+		return true ;
 	}
 	else{
-		return "Unable to login";
+		return false ;
 	}
 
 }
@@ -23,10 +23,24 @@ function newRegister($request) {
 	$register = new loginDB();
 	$result = $register->newUser($request);
 	if($result){
-		return "New user registered!";
+		return true;
 	}
 	else
-		return "Unable to register.";
+		return false;
+}
+
+function searchM($request){
+	$moviedb = new movieDB();
+	$movie_str = $request['movie'];
+	$movie = $moviedb->movieSearch($movie_str);
+	return $movie;
+}
+
+function newsFeed($request){
+	$moviedb = new movieDB();
+	$movie_str = $request['upcoming'];
+	$movie = $moviedb->upcomingMovies($movie_str);
+	return $movie;
 }
 
 function requestProcessor($request){
@@ -43,7 +57,11 @@ function requestProcessor($request){
 			return newRegister($request);
 		case "login":
 			return doLogin($request);
-	return "Request received and processed!";
+		case "searchM":
+			return searchM($request);
+		case "newsfeed":
+			return newsFeed($request);
+//	return "Request received and processed!";
 	}
 }
 
@@ -60,7 +78,7 @@ $callback = function($req) {
 	$json_message = json_decode($n, true);
 	echo " [.] Received(", $json_message['type'], ")\n";
 	$resl = requestProcessor($json_message);
-	echo " [.] Sent(", $resl, ")";
+	//echo " [.] Sent(", $resl, ")";
 	$results = json_encode($resl, true);
 	$msg = new AMQPMessage(
 		(string) $results,
