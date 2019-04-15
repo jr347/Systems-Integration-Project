@@ -36,10 +36,10 @@ function searchM($request){
 	return $movie;
 }
 
-function newsFeed($request){
+function newsFeed(){
 	$moviedb = new movieDB();
-	$movie_str = $request['upcoming'];
-	$movie = $moviedb->upcomingMovies($movie_str);
+	//$movie_str = $request['upcoming'];
+	$movie = $moviedb->upcomingMovies();
 	return $movie;
 }
 
@@ -78,7 +78,8 @@ $callback = function($req) {
 	$json_message = json_decode($n, true);
 	echo " [.] Received(", $json_message['type'], ")\n";
 	$resl = requestProcessor($json_message);
-	//echo " [.] Sent(", $resl, ")";
+	//echo " [.] Sent(", $resl["results"]["0"], ")";
+	var_dump($resl);
 	$results = json_encode($resl, true);
 	$msg = new AMQPMessage(
 		(string) $results,

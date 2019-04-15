@@ -1,23 +1,47 @@
 <?php
 
-class movieDB {
+class deployF {
 
-private $moviedb;
+private $deployf;
 
-public function __construct() {
-	$this->moviedb = new mysqli('localhost', 'root', 'godemper', 'movies');
-	if($this->moviedb->connect_error){
-	die('Connect Error (' . $this->moviedb->connect_errno . ')' . $this->moviedb->connect_error);
+public function deployFile($req) {
+	$data = $req['packageName'];
+	$level = $req['level'];
+	$fepackage = "Select Max(ver) AS Latest from fe";
+	$bepackage = "Select Max(ver) AS Latest from be";
+	if ($level == 'QA'){
+		if($data == 'FEpackage-v'){
+			$response = $this->deploydb->query($fepackage);
+			$result = $response->fetch_assoc();
+			$send_file = shell_exec('scp /feqav-'.$result.'.tar.gz johnny@192.168.43.61:/home/johnny/Desktop');
+			$install_file = shell_exec('./installFEQA.php');
+		}
+		elseif($data == 'BEpackage-v'){
+			$response = $this->deploydb->query($bepackage);
+			$result = $response->fetch_assoc();
+			$send_file = shell_exec('scp /beqav-'.$result.'.tar.gz ethan@192.168.43.62:/home/ethan/Desktop');
+			$install_file = shell_exec('./installBEQA.php');
+			
+		}
+				
 	}
-}
-
-public function movieSearch($req) {
-	$movie = $req;
-	$url = "https://api.themoviedb.org/3/search/movie?query=". rawurlencode($movie) . "&language=en-US&api_key=db277983b36c1274dbe40cdeef5356e9";
-	$data = file_get_contents($url);
-	$result = json_decode($data, true);
-	return $result; 
-
+	elseif ($level == 'Prod'){
+		if($data == 'FEpackage-v'){
+			$response = $this->deploydb->query($fepackage);
+			$result = $response->fetch_assoc();
+			$send_file = shell_exec('scp /feqav-'.$result.'.tar.gz johnny@192.168.43.63:/home/johnny/Desktop');
+			$install_file = shell_exec('./installFEQA.php');
+		}
+		elseif($data == 'BEpackage-v'){
+			$response = $this->deploydb->query($bepackage);
+			$result = $response->fetch_assoc();
+			$send_file = shell_exec('scp /beqav-'.$result.'.tar.gz ethan@192.168.43.64:/home/ethan/Desktop');
+			$install_file = shell_exec('./installBEQA.php');
+			
+		}
+		
+	}
+	
 }
 
 public function movieAdd($user, $req){
