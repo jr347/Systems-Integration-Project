@@ -36,10 +36,17 @@ function searchM($request){
 	return $movie;
 }
 
+<<<<<<< HEAD
 function newsFeed(){
 	$moviedb = new movieDB();
 	//$movie_str = $request['upcoming'];
 	$movie = $moviedb->upcomingMovies();
+=======
+function newsFeed($request){
+	$moviedb = new movieDB();
+	$movie_str = $request['upcoming'];
+	$movie = $moviedb->upcomingMovies($movie_str);
+>>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
 	return $movie;
 }
 
@@ -78,8 +85,12 @@ $callback = function($req) {
 	$json_message = json_decode($n, true);
 	echo " [.] Received(", $json_message['type'], ")\n";
 	$resl = requestProcessor($json_message);
+<<<<<<< HEAD
 	//echo " [.] Sent(", $resl["results"]["0"], ")";
 	var_dump($resl);
+=======
+	//echo " [.] Sent(", $resl, ")";
+>>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
 	$results = json_encode($resl, true);
 	$msg = new AMQPMessage(
 		(string) $results,

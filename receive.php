@@ -49,6 +49,7 @@ function requestProcessor($request){
 $connection = new AMQPStreamConnection('localhost', 5672, 'admin', 'admin');
 $channel = $connection->channel();
 
+<<<<<<< HEAD
 $channel->queue_declare('rpc_queue', false, false, false, false);
 
 echo " [x] Awaiting RPC request\n";
@@ -87,10 +88,28 @@ $channel->basic_consume('rpc_queue', '', false, false, false, false, $callback);
 
 $channel->basic_consume('hello', '', false, true, false, false, $callback);
 */
+=======
+$channel->queue_declare('hello', false, false, false, false);
+
+echo ' [*] Waiting for message. To exit press CTRL+C', "\n";
+
+$callback = function($msg) {
+	echo " [x] Received ", $msg->body, "\n";
+	$body = $msg->getBody();
+	$payload = json_decode($body, true);
+	return requestProcessor($payload);
+};
+
+$channel->basic_consume('hello', '', false, true, false, false, $callback);
+
+>>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
 while(count($channel->callbacks)) {
 	$channel->wait();
 }
 
+<<<<<<< HEAD
 $channel->close();
 $connection->close();
+=======
+>>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
 ?>

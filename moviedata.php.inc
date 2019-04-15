@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+=======
+header('Content-Type: text/plain');
+>>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
 
 class movieDB {
 
@@ -70,9 +74,14 @@ public function wishMovies($user){
 }
 
 public function upcomingMovies($req){
+<<<<<<< HEAD
 	$release_year = date('Y');
 	$release_date = date('Y-m-d');
 	$url = "https://api.themoviedb.org/3/discover/movie?api_key=db277983b36c1274dbe40cdeef5356e9&language=en-US&sort_by=primary_release_date.asc&include_adult=false&include_video=false&primary_release_year=". rawurlencode($release_year). "&primary_release_date.gte=".rawurlencode($release_date);
+=======
+	$movie = date('Y');
+	$url = "https://api.themoviedb.org/3/discover/movie?api_key=db277983b36c1274dbe40cdeef5356e9&language=en-US&sort_by=primary_release_date.asc&include_adult=false&include_video=false&primary_release_year=". rawurlencode($movie). "&primary_release_date.gte=".rawurlencode($req);
+>>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
 	$data = file_get_contents($url);
 	$result = json_decode($data, true);
 	return $result; 

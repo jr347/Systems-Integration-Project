@@ -3,6 +3,7 @@
 require_once '/usr/share/php/PhpAmqpLib/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
+<<<<<<< HEAD
 use PhpAmqpLib\Channel\AMQPChannel;
 use PhpAmqpLib\Channel\AbstractChannel;
 require_once('deploydblib.php.inc'); 
@@ -18,6 +19,16 @@ function nextPackage($data){
 	$result = $deploy->getNextPackage($data);
 	return $result;	
 }
+=======
+require_once('mysqlHelp.php.inc'); 
+function sendFile ()
+{
+	chdir('./');
+	$send_file = shell_exec('./example.sh'); 
+	
+}
+
+>>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
 
 function requestProcessor($request){
 	echo "Request Received".PHP_EOL;
@@ -29,16 +40,25 @@ function requestProcessor($request){
 	}
 	switch($request['type'])
 	{
+<<<<<<< HEAD
 		case "deploy":
 			return sendFile($request);
 		case "nextPackage":
 			return nextPackage($request);
+=======
+		case "deployRequest":
+			return sendFile();
+>>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
 //	return "Request received and processed!";
 	}
 }
 
 
+<<<<<<< HEAD
 $connection = new AMQPStreamConnection('192.168.43.104', 5672, 'IT490', '12345', 'Login');
+=======
+$connection = new AMQPStreamConnection('192.168.43.125', 5672, 'IT490', '12345', 'Login');
+>>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
 $channel_send = $connection->channel();
 $channel_rec = $connection->channel();
 $channel_send->queue_declare('deploy_receive, false, true, false, false');
