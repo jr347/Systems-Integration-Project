@@ -1,5 +1,13 @@
 <?php
 
+//**************************************************************************************************************
+// Description:     This file contains a list of functions used for authenticating users or creating new users
+//		    to access the service provided. The getInfo function verifies whether the user/password combination
+//		    exist. It will throw a general error message to the user based on whether 1. The username is
+//		    valid or 2. The password is incorrect. The newUser function adds a new user to the database for 
+//		    the service.
+//**************************************************************************************************************
+
 class loginDB {
 
 private $logindb;
