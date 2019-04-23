@@ -3,6 +3,18 @@
 =======
 header('Content-Type: text/plain');
 >>>>>>> fce7127cac45468850b4423d37b29b0bcc6624df
+	
+	
+//**************************************************************************************************************
+// Description:     This file contains a number of functions to be used with the movieDB class. The functions 
+//		    leverage themoviedb api to pull data on movies based on the queries passed in json format.
+//		    The function movieSearch pulls a list of movies based on the input of the user. The movieAdd
+//		    allows the user to add the details of the movie searched to their profile. This is used to 
+//		    keep track of any changes to the movies or release date.The movieDelete function removes
+//		    any move added from the user's profile. The wishMovies function keeps track of the release
+//		    dates for movies in your profile. The upcomingMovies show a full list of upcoming movies
+//		    regardless of whether they were added to your profile or not.
+//**************************************************************************************************************
 
 class movieDB {
 
