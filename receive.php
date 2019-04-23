@@ -1,5 +1,15 @@
 #!/usr/bin/php
 <?php
+
+//**************************************************************************************************************
+// Description:     This receive.php file is an executable file that is constantly listening on the back-end for
+//		    request from the front-end. The requests don't come directly from the front-end, but instead
+//		    go through rabbitMQ which controls the way the request are distributed. Based on the value received
+//		    , it can either authenticate an existing user or register a new user. The requestProcessor
+//		    function handles the request, and returns a result which is then encoded and provided back to 
+//		    the front-end. 
+//**************************************************************************************************************
+
 require_once '/usr/share/php/PhpAmqpLib/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 require_once('mysqlHelp.php.inc'); 
