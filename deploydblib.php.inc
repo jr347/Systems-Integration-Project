@@ -1,5 +1,13 @@
 <?php
 
+
+//**************************************************************************************************************
+// Description:     This executable file contains the functions used to scp both Front-End and Back-End packages 
+//		    to either the QA or Production environments. The goal is to simulate a change management
+//		    deployment process. It also fetches the latest version number of the files and adds it to
+//		    the compressed package.
+//**************************************************************************************************************
+
 class deployDB {
 
 private $deploydb;
