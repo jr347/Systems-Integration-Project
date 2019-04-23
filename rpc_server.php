@@ -1,5 +1,15 @@
 #!/usr/bin/php
 <?php
+
+//**************************************************************************************************************
+// Description:     This receive.php file is an executable file that is constantly listening on the back-end for
+//		    request from the front-end. The requests don't come directly from the front-end, but instead
+//		    go through rabbitMQ which controls the way the request are distributed. Based on the value received
+//		    , it can either 1. authenticate an existing user via the doLogin function; 2. register a new user via 
+//   		    newRegister function; 3. search for a movie based on the searchM function; 4. pull all upcoming movies
+//		    via the newsFeed function. The requestProcessor function handles the request, and returns a 
+//		    result which is then encoded and provided back to the front-end. 
+//**************************************************************************************************************
 require_once '/usr/share/php/PhpAmqpLib/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
@@ -37,11 +47,6 @@ function searchM($request){
 }
 
 <<<<<<< HEAD
-function newsFeed(){
-	$moviedb = new movieDB();
-	//$movie_str = $request['upcoming'];
-	$movie = $moviedb->upcomingMovies();
-=======
 function newsFeed($request){
 	$moviedb = new movieDB();
 	$movie_str = $request['upcoming'];
